@@ -31,7 +31,7 @@ class PinsController < ApplicationController
       else
         render :new 
       end
-    end
+  
   end
 
   # PATCH/PUT /pins/1
@@ -42,7 +42,7 @@ class PinsController < ApplicationController
       else
         render :edit 
       end
-    end
+
   end
 
   # DELETE /pins/1
@@ -50,7 +50,7 @@ class PinsController < ApplicationController
   def destroy
     @pin.destroy
       redirect_to pins_url
-    end
+
   end
 
   private
